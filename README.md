@@ -2,3 +2,4 @@
 Студент:
 * Chuprygin Vsevolod (Чупрыгин Всеволод)
 * chuprygin.v.a@gmail.com
+
