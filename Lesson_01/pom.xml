@@ -72,8 +72,8 @@
                             <goal>proguard</goal>
                         </goals>
                         <configuration>
-                            <injar>${project.build.finalName}-jar-with-dependencies.jar</injar> <!-- make sure to obfuscate the jar with dependencies -->
                             <proguardVersion>6.1</proguardVersion>
+                            <injar>${project.build.finalName}-jar-with-dependencies.jar</injar> <!-- make sure to obfuscate the jar with dependencies -->
                             <obfuscate>true</obfuscate>
                             <options>
                                 <option>-keep class Main { *; }</option>
@@ -84,6 +84,14 @@
                         </configuration>
                     </execution>
                 </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>net.sf.proguard</groupId>
+                        <artifactId>proguard-base</artifactId>
+                        <version>6.1</version>
+                        <scope>runtime</scope>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
