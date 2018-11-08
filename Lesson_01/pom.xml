@@ -84,9 +84,9 @@
                                 <option>-keepattributes Signature</option>
                                 <option>-keep class Main { *; }</option>
                             </options>
-                            <libs>
-                                <lib>${java.home}/lib/jrt-fs.jar</lib>
-                            </libs>
+                            <!--<libs>-->
+                                <!--<lib>${java.home}/lib/jrt-fs.jar</lib>-->
+                            <!--</libs>-->
                         </configuration>
                     </execution>
                 </executions>
