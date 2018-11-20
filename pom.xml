@@ -10,6 +10,7 @@
     <version>0.0.2</version>
     <modules>
         <module>Lesson_01</module>
+        <module>Lesson_03</module>
     </modules>
 
     <dependencies>
