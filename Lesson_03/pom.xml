@@ -10,15 +10,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>Lesson_03</artifactId>
-    <packaging>pom</packaging>
-
-    <repositories>
-        <repository>
-            <id>maven-repository</id>
-            <url>file:///${project.basedir}/Lesson_03/src/main/java/tool</url>
-        </repository>
-    </repositories>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>0.9</version>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
@@ -41,7 +39,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Main</mainClass>
+                            <mainClass>ObjectSizeWriter</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -60,15 +58,6 @@
             </plugin>
         </plugins>
     </build>
-    <dependencies>
-        <dependency>
-            <groupId>otus_java_2018-10</groupId>
-            <artifactId>ObjectSizeGetter</artifactId>
-            <version>0.0.1</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/src/main/java/tool/ObjectSizeGetter.jar</systemPath>
-        </dependency>
-    </dependencies>
 
 
 </project>
