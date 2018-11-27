@@ -13,10 +13,10 @@ class MyIterator<T> implements Iterator<T> {
     }
 
     public boolean hasNext() {
-        return this.index < this.list.size() -1;
+        return this.index < this.list.size();
     }
 
     public T next() {
-        return this.list.get(++this.index);
+        return this.list.get(this.index++);
     }
 }
