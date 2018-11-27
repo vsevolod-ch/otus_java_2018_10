@@ -178,11 +178,11 @@ public class MyArrayList<T> implements List<T> {
     }
 
     public ListIterator<T> listIterator() {
-        throw new UnsupportedOperationException();
+        return new MyListIterator<>(this);
     }
 
     public ListIterator<T> listIterator(int index) {
-        throw new UnsupportedOperationException();
+        return new MyListIterator<>(this, index);
     }
 
     public List<T> subList(int fromIndex, int toIndex) {
@@ -240,6 +240,15 @@ public class MyArrayList<T> implements List<T> {
         }
     }
 
+    /**
+     * Selection sort.
+     *
+     * @param c
+     */
+    public void sort(Comparator<? super T> c) {
+        MyArrayList.sort(this, c);
+    }
+
     @SuppressWarnings("unchecked")
     private void increase(int increaseSize) {
         T[] arr = (T[]) new Object[this.array.length + increaseSize];
@@ -248,6 +257,7 @@ public class MyArrayList<T> implements List<T> {
     }
 
     private void increase() {
+
         this.increase(MyArrayList.INIT);
     }
 
@@ -255,7 +265,7 @@ public class MyArrayList<T> implements List<T> {
         if (c.size() > this.array.length - this.size) {
             int increaseSize = MyArrayList.INIT;
             if (c.size() > MyArrayList.INIT)
-                increaseSize = (int) Math.ceil(c.size() / MyArrayList.INIT);
+                increaseSize = c.size() + MyArrayList.INIT;
             this.increase(increaseSize);
         }
     }

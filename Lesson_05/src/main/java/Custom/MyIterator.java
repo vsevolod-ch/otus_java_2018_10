@@ -2,6 +2,7 @@ package Custom;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 class MyIterator<T> implements Iterator<T> {
 
