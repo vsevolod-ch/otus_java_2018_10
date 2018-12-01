@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cc9cc3e-9322-4d3d-bdd9-223fa0bd3a4a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Lesson_05/src/main/java/Custom/MyListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_05/src/main/java/Custom/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_05/src/main/java/Custom/MyArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_05/src/main/java/Custom/MyIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_05/src/main/java/Custom/MyIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_05/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_05/src/main/java/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,24 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lesson_05/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lesson_05/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="828">
               <caret line="48" column="38" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="38" />
-              <folding>
-                <element signature="e#1498#1499#0" expanded="true" />
-                <element signature="e#1537#1538#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -62,22 +46,29 @@
       <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
         <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
+            <state relative-caret-position="17064">
               <caret line="1006" column="20" selection-start-line="1006" selection-start-column="20" selection-end-line="1006" selection-end-column="20" />
               <folding>
                 <element signature="e#9109#9110#0" expanded="true" />
                 <element signature="e#9146#9147#0" expanded="true" />
                 <element signature="e#34603#34604#0" expanded="true" />
                 <element signature="e#34640#34641#0" expanded="true" />
-                <element signature="e#35423#35453#0" expanded="true" />
                 <element signature="e#37476#37477#0" expanded="true" />
                 <element signature="e#37518#37519#0" expanded="true" />
                 <element signature="e#37552#37553#0" expanded="true" />
                 <element signature="e#37589#37590#0" expanded="true" />
                 <element signature="e#37627#37628#0" expanded="true" />
                 <element signature="e#37668#37669#0" expanded="true" />
-                <element signature="e#37679#37709#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -85,7 +76,7 @@
       <file leaf-file-name="Iterator.java" pinned="false" current-in-tab="false">
         <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/util/Iterator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="900">
               <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
             </state>
           </provider>
@@ -94,18 +85,10 @@
       <file leaf-file-name="MyListIterator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lesson_05/src/main/java/Custom/MyListIterator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1314">
+            <state relative-caret-position="1134">
               <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
-                <element signature="e#476#477#0" expanded="true" />
-                <element signature="e#230#231#0" expanded="true" />
-                <element signature="e#258#259#0" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#394#395#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,12 +97,8 @@
       <file leaf-file-name="Collections.java" pinned="false" current-in-tab="false">
         <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/util/Collections.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="3150">
               <caret line="175" column="27" selection-start-line="175" selection-start-column="27" selection-end-line="175" selection-end-column="27" />
-              <folding>
-                <element signature="e#7337#7338#0" expanded="true" />
-                <element signature="e#7365#7366#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -127,7 +106,7 @@
       <file leaf-file-name="ListIterator.java" pinned="false" current-in-tab="false">
         <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/util/ListIterator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
+            <state relative-caret-position="864">
               <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
             </state>
           </provider>
@@ -136,51 +115,31 @@
       <file leaf-file-name="MyIterator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lesson_05/src/main/java/Custom/MyIterator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="234">
               <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding>
-                <element signature="e#204#205#0" expanded="true" />
-                <element signature="e#236#237#0" expanded="true" />
-                <element signature="e#268#269#0" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
                 <element signature="e#434#435#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lesson_05/src/main/java/Custom/MyArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="259" column="8" selection-start-line="259" selection-start-column="8" selection-end-line="259" selection-end-column="8" />
+            <state relative-caret-position="4266">
+              <caret line="259" selection-start-line="259" selection-end-line="259" />
               <folding>
-                <element signature="e#246#276#0" expanded="true" />
-                <element signature="e#492#522#0" expanded="true" />
                 <element signature="e#658#659#0" expanded="true" />
                 <element signature="e#690#691#0" expanded="true" />
                 <element signature="e#722#723#0" expanded="true" />
                 <element signature="e#759#760#0" expanded="true" />
                 <element signature="e#800#801#0" expanded="true" />
                 <element signature="e#844#845#0" expanded="true" />
-                <element signature="e#1520#1550#0" expanded="true" />
-                <element signature="e#2643#2673#0" expanded="true" />
-                <element signature="e#4357#4387#0" expanded="true" />
                 <element signature="e#4625#4626#0" expanded="true" />
-                <element signature="e#4682#4683#0" expanded="true" />
+                <element signature="e#4674#4675#0" expanded="true" />
                 <element signature="e#4728#4729#0" expanded="true" />
-                <element signature="e#4772#4773#0" expanded="true" />
-                <element signature="e#4851#4852#0" expanded="true" />
-                <element signature="e#4908#4909#0" expanded="true" />
-                <element signature="e#4945#4946#0" expanded="true" />
-                <element signature="e#4991#4992#0" expanded="true" />
-                <element signature="e#5024#5025#0" expanded="true" />
-                <element signature="e#5081#5082#0" expanded="true" />
-                <element signature="e#5121#5122#0" expanded="true" />
-                <element signature="e#5178#5179#0" expanded="true" />
-                <element signature="e#6201#6202#0" expanded="true" />
-                <element signature="e#6242#6243#0" expanded="true" />
-                <element signature="e#6249#6279#0" expanded="true" />
+                <element signature="e#4784#4785#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -189,7 +148,7 @@
       <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
         <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/util/List.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="8640">
               <caret line="503" column="17" selection-start-line="503" selection-start-column="17" selection-end-line="503" selection-end-column="17" />
             </state>
           </provider>
@@ -236,12 +195,12 @@
         <option value="$PROJECT_DIR$/Lesson_03/src/main/java/HelperObjects/D.java" />
         <option value="$PROJECT_DIR$/Lesson_03/src/main/java/ObjectSizeWriter.java" />
         <option value="$PROJECT_DIR$/Lesson_05/src/main/java/MyArrayList.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Lesson_05/pom.xml" />
         <option value="$PROJECT_DIR$/Lesson_05/src/main/java/Custom/MyIterator.java" />
         <option value="$PROJECT_DIR$/Lesson_05/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/Lesson_05/src/main/java/Custom/MyListIterator.java" />
         <option value="$PROJECT_DIR$/Lesson_05/src/main/java/Custom/MyArrayList.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -286,7 +245,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -296,6 +255,18 @@
             <path>
               <item name="otus_java_2018_10" type="1abcf292:AndroidViewProjectNode" />
               <item name="Lesson_01" type="e9137016:NonAndroidModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Lesson_01" type="cbb8eebc:String" user="Lesson_01" />
             </path>
           </expand>
           <select />
@@ -338,18 +309,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Lesson_01" type="cbb8eebc:String" user="Lesson_01" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -460,12 +419,13 @@
       <workItem from="1543401037147" duration="604000" />
       <workItem from="1543519219564" duration="119000" />
       <workItem from="1543570239510" duration="16000" />
-      <workItem from="1543598016438" duration="10505000" />
+      <workItem from="1543598016438" duration="11287000" />
+      <workItem from="1543644374621" duration="32000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101354000" />
+    <option name="totallyTimeSpent" value="102168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="-11" width="1873" height="1092" extended-state="6" />
@@ -481,10 +441,10 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32948583" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5026233" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32738718" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32738718" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="6" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49947533" visible="true" weight="0.32931507" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49947533" visible="true" weight="0.33315068" />
       <window_info anchor="right" id="Database" order="8" weight="0.329863" />
       <window_info id="Structure" order="1" sideWeight="0.50052464" side_tool="true" weight="0.27671233" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -741,13 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lesson_05/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -757,20 +710,16 @@
     </entry>
     <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/util/Iterator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
+        <state relative-caret-position="900">
           <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lesson_05/src/main/java/Custom/MyIterator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="234">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
             <element signature="e#434#435#0" expanded="true" />
           </folding>
         </state>
@@ -778,18 +727,14 @@
     </entry>
     <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/util/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
+        <state relative-caret-position="3150">
           <caret line="175" column="27" selection-start-line="175" selection-start-column="27" selection-end-line="175" selection-end-column="27" />
-          <folding>
-            <element signature="e#7337#7338#0" expanded="true" />
-            <element signature="e#7365#7366#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
+        <state relative-caret-position="8640">
           <caret line="503" column="17" selection-start-line="503" selection-start-column="17" selection-end-line="503" selection-end-column="17" />
         </state>
       </provider>
@@ -798,91 +743,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="48" column="38" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="38" />
-          <folding>
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1537#1538#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
+        <state relative-caret-position="17064">
           <caret line="1006" column="20" selection-start-line="1006" selection-start-column="20" selection-end-line="1006" selection-end-column="20" />
           <folding>
             <element signature="e#9109#9110#0" expanded="true" />
             <element signature="e#9146#9147#0" expanded="true" />
             <element signature="e#34603#34604#0" expanded="true" />
             <element signature="e#34640#34641#0" expanded="true" />
-            <element signature="e#35423#35453#0" expanded="true" />
             <element signature="e#37476#37477#0" expanded="true" />
             <element signature="e#37518#37519#0" expanded="true" />
             <element signature="e#37552#37553#0" expanded="true" />
             <element signature="e#37589#37590#0" expanded="true" />
             <element signature="e#37627#37628#0" expanded="true" />
             <element signature="e#37668#37669#0" expanded="true" />
-            <element signature="e#37679#37709#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/util/ListIterator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
+        <state relative-caret-position="864">
           <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lesson_05/src/main/java/Custom/MyListIterator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1314">
+        <state relative-caret-position="1134">
           <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lesson_05/src/main/java/Custom/MyArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="259" column="8" selection-start-line="259" selection-start-column="8" selection-end-line="259" selection-end-column="8" />
+        <state relative-caret-position="4266">
+          <caret line="259" selection-start-line="259" selection-end-line="259" />
           <folding>
-            <element signature="e#246#276#0" expanded="true" />
-            <element signature="e#492#522#0" expanded="true" />
             <element signature="e#658#659#0" expanded="true" />
             <element signature="e#690#691#0" expanded="true" />
             <element signature="e#722#723#0" expanded="true" />
             <element signature="e#759#760#0" expanded="true" />
             <element signature="e#800#801#0" expanded="true" />
             <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#1520#1550#0" expanded="true" />
-            <element signature="e#2643#2673#0" expanded="true" />
-            <element signature="e#4357#4387#0" expanded="true" />
             <element signature="e#4625#4626#0" expanded="true" />
-            <element signature="e#4682#4683#0" expanded="true" />
+            <element signature="e#4674#4675#0" expanded="true" />
             <element signature="e#4728#4729#0" expanded="true" />
-            <element signature="e#4772#4773#0" expanded="true" />
-            <element signature="e#4851#4852#0" expanded="true" />
-            <element signature="e#4908#4909#0" expanded="true" />
-            <element signature="e#4945#4946#0" expanded="true" />
-            <element signature="e#4991#4992#0" expanded="true" />
-            <element signature="e#5024#5025#0" expanded="true" />
-            <element signature="e#5081#5082#0" expanded="true" />
-            <element signature="e#5121#5122#0" expanded="true" />
-            <element signature="e#5178#5179#0" expanded="true" />
-            <element signature="e#6201#6202#0" expanded="true" />
-            <element signature="e#6242#6243#0" expanded="true" />
-            <element signature="e#6249#6279#0" expanded="true" />
+            <element signature="e#4784#4785#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
