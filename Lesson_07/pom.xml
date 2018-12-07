@@ -52,5 +52,14 @@
             </plugin>
         </plugins>
     </build>
+    <!--<dependencies>-->
+        <!--<dependency>-->
+            <!--<groupId>TestFramework</groupId>-->
+            <!--<artifactId>TestFramework</artifactId>-->
+            <!--<version>1.0-SNAPSHOT</version>-->
+            <!--<scope>system</scope>-->
+            <!--<systemPath>${basedir}/src/main/java/TestFramework/target/TestFramework-1.0-SNAPSHOT-jar-with-dependencies.jar</systemPath>-->
+        <!--</dependency>-->
+    <!--</dependencies>-->
 
 </project>

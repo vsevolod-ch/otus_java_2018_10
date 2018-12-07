@@ -1,8 +1,9 @@
 package Tests;
 
-import Annotations.After;
-import Annotations.Before;
-import Annotations.Test;
+
+import TestFramework.Annotations.After;
+import TestFramework.Annotations.Before;
+import TestFramework.Annotations.Test;
 
 public class Test01 {
 

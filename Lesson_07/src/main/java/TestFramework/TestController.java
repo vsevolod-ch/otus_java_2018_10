@@ -1,13 +1,17 @@
-package Tests;
+package TestFramework;
 
-import Annotations.After;
-import Annotations.Before;
-import Annotations.Test;
+import TestFramework.Annotations.After;
+import TestFramework.Annotations.Before;
+import TestFramework.Annotations.Test;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -39,30 +43,63 @@ public class TestController<T> {
         this.finish = null;
     }
 
-    public static void test(Class clazz) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+    public static void testPackage(String pack) throws Exception {
+        ArrayList<Class> classes = TestController.getClasses(pack);
+        for (Class c : classes) {
+            System.out.println("Class: " + c);
+            TestController.test(c);
+        }
+    }
+
+    public static void test(Class clazz) throws NoSuchMethodException {
         TestController tc = new TestController();
         tc.clazz = clazz;
         tc.test();
     }
 
-    public static void test(String clazz) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+    public static void test(String clazz) throws ClassNotFoundException, NoSuchMethodException {
         TestController tc = new TestController();
         tc.clazz = Class.forName(clazz);
         tc.test();
     }
 
+    public static ArrayList<Class> getClasses(String pack) throws Exception {
+        String path = File.separatorChar + pack.replace('.', File.separatorChar);
+        ArrayList<Class> classes = new ArrayList<>();
+        InputStream resource = TestController.class.getResourceAsStream(path);
+        if (resource == null)
+            throw new Exception("Package resource is null");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(resource));
+        String line = null;
+        while (reader.ready()) {
+            line = reader.readLine();
+            if (line.endsWith(".class")) {
+                classes.add(Class.forName(pack + "." + line.substring(0, line.lastIndexOf('.'))));
+            }
+        }
+        return classes;
+    }
+
     @SuppressWarnings("unchecked")
-    private void test() throws IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchMethodException {
+    private void test() throws NoSuchMethodException {
         this.parseClass();
         System.out.println(String.format("------ run tests %s -----", this.clazz.getName()));
         Constructor<T> c = this.clazz.getConstructor();
         T test;
         for (Map.Entry<Integer, ArrayList<Method>> entry : this.invokablesTests.entrySet()) {
             for (Method m : entry.getValue()) {
-                test = c.newInstance();
-                this.init.invoke(test);
-                m.invoke(test);
-                this.finish.invoke(test);
+                try {
+                    test = c.newInstance();
+                    if (this.init != null)
+                        this.init.invoke(test);
+                    m.invoke(test);
+                    if (this.finish != null)
+                        this.finish.invoke(test);
+                } catch (Exception e) {
+                    System.out.println("Errors:");
+                    System.out.println(e.getMessage());
+                    System.out.println(Arrays.toString(e.getStackTrace()));
+                }
             }
         }
         System.out.println(String.format("------ tests %s passed -----", this.clazz.getName()));
@@ -71,7 +108,7 @@ public class TestController<T> {
     }
 
     private void parseClass() {
-        Method[] methods = this.clazz.getDeclaredMethods();
+        Method[] methods = this.clazz.getMethods();
         for (Method m : methods) {
             if (m.isAnnotationPresent(Before.class)) {
                 if (this.init != null)
