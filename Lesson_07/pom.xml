@@ -52,7 +52,12 @@
             </plugin>
         </plugins>
     </build>
-    <!--<dependencies>-->
+    <dependencies>
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.9.11</version>
+        </dependency>
         <!--<dependency>-->
             <!--<groupId>TestFramework</groupId>-->
             <!--<artifactId>TestFramework</artifactId>-->
@@ -60,6 +65,6 @@
             <!--<scope>system</scope>-->
             <!--<systemPath>${basedir}/src/main/java/TestFramework/target/TestFramework-1.0-SNAPSHOT-jar-with-dependencies.jar</systemPath>-->
         <!--</dependency>-->
-    <!--</dependencies>-->
+    </dependencies>
 
 </project>

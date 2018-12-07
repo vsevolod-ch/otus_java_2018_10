@@ -3,6 +3,8 @@ package TestFramework;
 import TestFramework.Annotations.After;
 import TestFramework.Annotations.Before;
 import TestFramework.Annotations.Test;
+import org.reflections.Reflections;
+import org.reflections.scanners.SubTypesScanner;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -10,10 +12,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class TestController<T> {
     /**
@@ -43,9 +42,18 @@ public class TestController<T> {
         this.finish = null;
     }
 
-    public static void testPackage(String pack) throws Exception {
+    public static void testPackageThroughClassloader(String pack) throws Exception {
         ArrayList<Class> classes = TestController.getClasses(pack);
         for (Class c : classes) {
+            System.out.println("Class: " + c);
+            TestController.test(c);
+        }
+    }
+
+    public static void testPackageThroughReflections(String pack) throws Exception {
+        Reflections ref = new Reflections(pack, new SubTypesScanner(false));
+        Set<Class<?>> classes = ref.getSubTypesOf(Object.class);
+        for (Class c: classes) {
             System.out.println("Class: " + c);
             TestController.test(c);
         }

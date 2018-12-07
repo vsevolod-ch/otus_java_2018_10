@@ -5,11 +5,12 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         try {
-//            TestFramework.TestFramework.TestController.test(Test01.class);
+//            TestController.test(Test01.class);
 //            TestFramework.TestFramework.TestController.test(Test02.class);
 //            TestFramework.TestFramework.TestController.test(Test03.class);
 //            TestController.test("Tests.Test01");
-            TestController.testPackage("Tests");
+            TestController.testPackageThroughReflections("Tests");
+//            TestController.testPackageThroughClassloader("Tests");
         } catch (Exception e) {
             System.out.println("Error");
             System.out.println(e.getMessage());
