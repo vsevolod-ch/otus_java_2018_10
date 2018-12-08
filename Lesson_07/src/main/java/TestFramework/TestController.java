@@ -45,7 +45,6 @@ public class TestController<T> {
     public static void testPackageThroughClassloader(String pack) throws Exception {
         ArrayList<Class> classes = TestController.getClasses(pack);
         for (Class c : classes) {
-            System.out.println("Class: " + c);
             TestController.test(c);
         }
     }
@@ -53,8 +52,7 @@ public class TestController<T> {
     public static void testPackageThroughReflections(String pack) throws Exception {
         Reflections ref = new Reflections(pack, new SubTypesScanner(false));
         Set<Class<?>> classes = ref.getSubTypesOf(Object.class);
-        for (Class c: classes) {
-            System.out.println("Class: " + c);
+        for (Class c : classes) {
             TestController.test(c);
         }
     }
@@ -90,25 +88,27 @@ public class TestController<T> {
 
     @SuppressWarnings("unchecked")
     private void test() throws NoSuchMethodException {
-        this.parseClass();
-        System.out.println(String.format("------ run tests %s -----", this.clazz.getName()));
-        Constructor<T> c = this.clazz.getConstructor();
-        T test;
-        for (Map.Entry<Integer, ArrayList<Method>> entry : this.invokablesTests.entrySet()) {
-            for (Method m : entry.getValue()) {
-                try {
+        try {
+            System.out.println(String.format("------ run tests %s -----", this.clazz.getName()));
+            this.parseClass();
+            Constructor<T> c = this.clazz.getConstructor();
+            T test;
+            for (Map.Entry<Integer, ArrayList<Method>> entry : this.invokablesTests.entrySet()) {
+                for (Method m : entry.getValue()) {
                     test = c.newInstance();
                     if (this.init != null)
                         this.init.invoke(test);
                     m.invoke(test);
                     if (this.finish != null)
                         this.finish.invoke(test);
-                } catch (Exception e) {
-                    System.out.println("Errors:");
-                    System.out.println(e.getMessage());
-                    System.out.println(Arrays.toString(e.getStackTrace()));
                 }
             }
+        } catch (Exception e) {
+            System.out.println("Errors:");
+            System.out.println(e.getMessage());
+            System.out.println(Arrays.toString(e.getStackTrace()));
+            System.out.println(String.format("------ tests %s failed -----", this.clazz.getName()));
+            return;
         }
         System.out.println(String.format("------ tests %s passed -----", this.clazz.getName()));
         System.out.println();
