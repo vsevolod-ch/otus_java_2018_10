@@ -5,11 +5,11 @@ import TestFramework.Annotations.After;
 import TestFramework.Annotations.Before;
 import TestFramework.Annotations.Test;
 
-public class Test04WithRuntimeException {
+public class Test04WithMultipleAfterRuntimeException {
 
-    public Test04WithRuntimeException () {}
+    public Test04WithMultipleAfterRuntimeException() {}
 
-    @Before
+    @After
     public void init () {
         System.out.println(this.getClass().getName() + ".init()");
     }

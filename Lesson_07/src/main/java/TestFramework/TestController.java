@@ -108,6 +108,7 @@ public class TestController<T> {
             System.out.println(e.getMessage());
             System.out.println(Arrays.toString(e.getStackTrace()));
             System.out.println(String.format("------ tests %s failed -----", this.clazz.getName()));
+            System.out.println();
             return;
         }
         System.out.println(String.format("------ tests %s passed -----", this.clazz.getName()));

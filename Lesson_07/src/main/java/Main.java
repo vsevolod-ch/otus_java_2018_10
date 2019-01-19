@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         try {
 //            TestController.test(Test01.class);
-//            TestFramework.TestFramework.TestController.test(Test02.class);
+//            TestFramework.TestFramework.TestController.test(Test02WithRuntimeException.class);
 //            TestFramework.TestFramework.TestController.test(Test03.class);
 //            TestController.test("Tests.Test01");
             TestController.testPackageThroughReflections("Tests");
